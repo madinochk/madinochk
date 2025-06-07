@@ -1,0 +1,19 @@
+name: Generate Snake
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Автоматический запуск каждый день
+  workflow_dispatch:  # Позволяет запускать вручную
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Platane/snk@master
+        with:
+          github_user_name: madinochk  # Ваш ник
+          svg_path: output/github-contribution-grid-snake.svg
+      - uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+          commit_message: "Update snake animation"
