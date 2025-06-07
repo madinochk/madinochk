@@ -38,3 +38,4 @@
 
 ⭐ **Fun Project**: Check out my [AI-Powered Resume Builder](https://github.com/madinochk/resume-ai) (WIP)!  
 🎨 **Design Lover**: I also dabble in Figma & UI prototyping.  
+[![Snake animation](https://github.com/madinochk/madinochk/blob/output/github-contribution-grid-snake.svg)](https://github.com/madinochk)
